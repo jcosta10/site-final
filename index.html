@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Descoding bias</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tilt.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> 
+
+  <script src="https://unpkg.com/overscroll@2.0.8/dist/overscroll.min.js"></script>
+
+
+	<script defer src="app.js"></script>
+</head>
+<body>
+ <div class="site-container">
+        <nav>
+            <a href="index.html">(De)coding Gender Bias</a>
+            <a href="#" onclick="mostrarPopUp()">About</a>
+
+        </nav>
+        
+        <div id="popUp" class="popUp">
+            <div class="popUpContent">
+                <span class="fechar" onclick="fecharPopUp()">&times;</span>
+                <h2>About</h2>
+                <p class="about-paragraph">Automatic Gender Recognition (AGR) like Paquinelli and Joler said ”aims to illustrate two sides of machine learning at the same time: how it works and how it fails — enumerating its main components, as well as the broad spectrum of errors, limitations, approximations, biases, faults, fallacies and vulnerabilities that are native to its paradigm. This double operation stresses that AI is not a monolithic paradigm of rationality but a spurious architecture made of adapting techniques and tricks. Besides, the limits of AI are not simply technical but are imbricated with human bias.” </p>
+                <p class="about-paragraph">The "(De)coding Gender Bias" project aims to deconstruct gender bias in facial recognition systems by highlighting errors, limitations, prejudices, and vulnerabilities in the construction of facial recognition systems. It emphasizes that AI reflects human biases and calls for awareness and reflection on the power of social structures and how they can bias algorithms.  </p>
+                <p class="about-paragraph">The goal of the project is to raise consciousness about the perpetuation of gender stereotypes and the need to critically examine limitations and implications of building AI based social and culture structures. </p>
+                <p class="about-paragraph">The contents used were extracted from other text of other authors to explore and create awareness and solution for gender stereotypes in AI.</p> 
+                <p class="about-paragraph">This project is an academic project. </p>
+
+                <p class="about-title">Main references </p>
+                <p class="about-paragraph">- OS KEYES. The Misgendering Machines: Trans/HCI Implications of Automatic Gender Recognition. University of Washington, USA.   </p>
+                <p class="about-paragraph">- JOLER & PASQUINELLI (2020). The Nooscope Manifested.  </p>
+                <p class="about-paragraph">-  MATTEO PASQUINELLI (2019). How a Machine Learns and Fails – A Grammar of Error for Artificial Intelligence.   </p>
+              
+
+                <p class="about-title">Author</p>
+                <p class="about-paragraph">Joana Costa, Project II e Laboratory II </p>
+                <p class="about-paragraph">Master's in Communication Design, FBAUL, 2022/2023 </p>
+
+                <p class="about-title">Project Advisor </p>
+                <p class="about-paragraph">Master's in Communication Design, FBAUL, 2022/2023</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="rectangle">
+        <div class="inner-rectangle">
+            <div class="word-container">
+                <div class="word">man</div>
+                <div class="word">woman</div>
+            </div>
+        </div>
+        <div class="cover-image"></div>
+    </div>
+<div class="container-wrapper section section-1">
+    <section class="container">
+    </section>
+
+<div class="container-wrapper section section-1">
+    <section class="container">
+      <div class="space-holder">
+        <div class="sticky">
+          <div class="horizontal">
+            <section role="feed" class="cards">
+    
+              <article class="sample-card">
+                <div class="chapter-1">
+                  <h2 class="typewriter">I. Misgendering = Misrepresentation </h2>
+                  <div class="parallax-container">
+                    <p class="quote ">
+                      <span data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-offset="500" data-aos-duration="500">"Optical lenses symbolize biases and approximations representing the compression and</span>
+                      <span data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-offset="500" data-aos-duration="1000">distortion of the information flow. The total bias of machine learning is represented by the </span>
+                      <span data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-offset="500" data-aos-duration="300">central lens of the statistical model through which the perception of the world is diffracted."</span>
+                      
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">ACR (Automatic Gender Recognition) <i class="fas fa-plus fa-spin"></i>
+                    <span class="hover-content">AGR (Automatic Gender Recognition) is a subfield of facial recognition that aims to algorithmically identify the gender of individuals from photographs or videos.
+                    </span>
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img src="imagens/ACR.gif" alt="Floating Image">
+                  </div>
+
+                  <ul class="slide-in-items slide-in-right" id="item-list">
+                    <li class="slide-in-right" >
+                      <span class="main-info">Identifying gender</span>
+                    </li>
+                    <li class="slide-in-right" >
+                      <span class="main-info">Not in the pattern</span>
+                    </li>
+                    <li class="slide-in-right" >
+                      <span class="main-info">Impossible to identify</span>
+                    </li>
+                    <li class="slide-in-right" >
+                      <span class="main-info">Misgendering = Misrepresentation</span>
+                    </li>
+                  </ul>
+
+              </article>
+              <article class="sample-card"> </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<div class="container-wrapper section section-1">
+    <section class="container">
+      <div class="space-holder">
+        <div class="sticky">
+          <div class="horizontal">
+            <section role="feed" class="cards">
+             
+              <article class="sample-card">
+                <div class="chapter-2">
+                  <h2 class="typewriter">II. Model </h2>
+                  <div class="parallax-container">
+                    <p class="quote zoom-in parallax-quote">"AI is not a thinking automaton but an algorithm that performs pattern recognition."</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Pattern 
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img  src="imagens/pattern.gif" alt="Floating Image">
+                  </div>
+
+                  <p class="info slide-in-content">A visual pattern is recorded as an impression on a network of artificial neurons that are firing up in concert with the repetition of similar images and activating one single output neuron.</p>
+              </article>
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Neural network
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img src="imagens/neural-network.gif" alt="Floating Image">
+                  </div>
+
+                  <p class="info slide-in-content">Artificial neural networks started as simple computing structures that evolved into complex ones which are now controlled by a few hyperparameters that express millions of parameters.</p>
+              </article>
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Black box
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img src="imagens/black-box.gif" alt="Floating Image">
+                  </div>
+
+                  <p class="info slide-in-content">The black box effect is an actual issue of deep neural networks (which filter information so much that their chain of reasoning cannot be reversed) but has become a generic pretext for the opinion that AI systems are not just inscrutable and opaque, but even ‘alien’ and out of control.</p>
+              </article>
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Ghost work
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/Gost-work.gif" alt="Floating Image">
+                  </div>
+                  <p class="info slide-in-content">The problem of bias has mostly originated from the fact that machine learning algorithms are among the most efficient for information compression, which engenders issues of information resolution, diffraction and loss.</p>
+              </article>
+              <article class="sample-card"> </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<div class="container-wrapper section section-1">
+    <section class="container">
+      <div class="space-holder">
+        <div class="sticky">
+          <div class="horizontal">
+            <section role="feed" class="cards">
+              
+              <article class="sample-card">
+                <div class="chapter-1">
+                  <h2 class="typewriter">III. Model learning </h2>
+                  <div class="parallax-container">
+                    <p class="quote zoom-in parallax-quote">"Machine learning is a term that, as much as ‘AI', anthropomorphizes a piece of technology: machine learning learns nothing in the proper sense of the word, as a human does."</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Bruce force approximation 
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/bruce-froce.gif" alt="Floating Image">
+                  </div>
+
+                  <p class="info slide-in-content">Neural networks are said to be among the most efficient algorithms because these differential methods can approximate the shape of any function given enough layers of neurons and abundant computing resources.</p>
+              </article>
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Interpolation extrapolation
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/interpolation.gif" alt="Floating Image">
+                  </div>
+
+                  <p class="info slide-in-content">The statistical model of machine learning algorithms is also an approximation in the sense that it guesses the missing parts of the data graph: either through interpolation, which is the prediction of an output y within the known interval of the input x in the training dataset, or through extrapolation, which is the prediction of output y beyond the limits of x, often with high risks of inaccuracy.</p>
+              </article>
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Curve fitting
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/Curve-fitting.gif" alt="Floating Image">
+                  </div>
+
+                  <p class="info slide-in-content">‘curve fitting’ imposes a statistical culture and replaces the traditional episteme of causation (and political accountability) with one of correlations blindly driven by the automation of decision making.</p>
+              </article>
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Model fitting
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/model-fitting.gif" alt="Floating Image">
+                  </div>
+
+                  <p class="info slide-in-content">The challenge of guarding the accuracy of machine learning lays in calibrating the equilibrium between data underfitting and overfitting, which is difficult to do because of different machine biases.</p>
+              </article>
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Arquitecture algorithm
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/algorithm-arquitecture.gif" alt="Floating Image">
+                  </div>
+
+                  <p class="info slide-in-content">The algorithm starts as a blank slate and, during the process called training, or ‘learning from data', adjusts its parameters until it reaches a good representation of the input data.</p>
+              </article>
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Ghost work 
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/gost-work-2.gif" alt="Floating Image">
+                  </div>
+
+                  <ul class="slide-in-items slide-in-left-alt" id="item-list">
+                    <li class="slide-in-left-alt" >
+                      <span class="main-info">Chosing parameters</span>
+                      <span class="additional-info"></span>
+                    </li>
+                    <li class="slide-in-left-alt" >
+                      <span class="main-info">Defining model</span>
+                      <span class="additional-info"></span>
+                    </li>
+                    <li class="slide-in-left-alt ">
+                      <span class="main-info">Algorithmic becaming bias &#43;</span>
+                      <span class="additional-info">Algorithmic bias is the further amplification of historical bias and dataset bias by machine learning algorithms</span>
+                    </li>
+                  </ul>
+
+              </article>
+              <article class="sample-card"> </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<div class="container-wrapper section section-1">
+    <section class="container">
+      <div class="space-holder">
+        <div class="sticky">
+          <div class="horizontal">
+            <section role="feed" class="cards">
+              <article class="sample-card">
+                <div class="chapter-1">
+                  <h2 class="typewriter">IV. Traning data</h2>
+                  <div class="parallax-container">
+                    <p class="quote zoom-in parallax-quote">"The quality of training data is the most important factor affecting the so-called ‘intelligence’ that machine learning algorithms extract."</p>
+                  </div>
+                </div>
+              </article>
+
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Traning a dataset
+                  </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/traning-data.gif" alt="Floating Image">
+                  </div>
+
+                  <ul class="slide-in-left slide-in-items" id="item-list">
+                    <li class="slide-in-left">
+                      <span class="main-info">Production &#43;</span>
+                      <span class="additional-info">labour or phenomena that produce information.</span>
+                    </li>
+                    <li class="slide-in-left">
+                      <span class="main-info">Capture &#43;</span>
+                      <span class="additional-info">encoding of information into a data format by an instrument.</span>
+                    </li>
+                    <li class="slide-in-left">
+                      <span class="main-info">Formatting &#43;</span>
+                      <span class="additional-info">organization of data into a dataset.</span>
+                    </li>
+                    <li class="slide-in-left">
+                      <span class="main-info">Labelling &#43;</span>
+                      <span class="additional-info">in supervised learning, the classification of data into categories (metadata).</span>
+                    </li>
+                  </ul>
+
+              </article>
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                      <span class="hover-box glare-effect icon-spin">Culture construct > Ghost work 
+                      </span>
+                    </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/cultural-construct.gif" alt="Floating Image">
+                  </div>
+                  <p class="info slide-in-content">The training dataset is a 
+                    <span class="middle-info">cultural construct &#43;</span>
+                    <span class="other-info">Cognitive bias is a systematic error in thinking that occurs when people are processing and interpreting information in the world around them and affects the decisions and judgments that they make</span>
+                  , not just a technical one.</p>
+              </article>
+
+              <article class="sample-card">
+                <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Ghost work > Select data
+                  </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/select-data.gif" alt="Floating Image">
+                  </div>
+                    <p class="info slide-in-content">Selecting data = 
+                    <span class="middle-info"> data bias &#43;</span>
+                    <span class="other-info">Dataset bias is introduced through the preparation of training data by human operators. Traning dataset is a cultural construct, not just a technical one.</p>
+              </article>
+
+              <article class="sample-card">
+                <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Labelling > Ghost work > Data posing
+                  </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/label.gif" alt="Floating Image">
+                  </div>
+                    <p class="info slide-in-content">Defining data
+                    and 
+                    <span class="middle-info"> labelling bias &#43;</span>
+                    <span class="other-info">Labelling bias occurs when the set of labeled data is not fully representative of the entire universe of potential labels. This is a very common problem in supervised learning, stemming from the fact that data often needs to be labeled by hand (which is difficult and expensive)</p>
+              </article>
+
+              <article class="sample-card">
+                <h3 class="neon-effect fade-in-out">
+                  <span class="hover-box glare-effect icon-spin">Taxanomies 
+                      </span>
+                    </h3>
+                  <div class="image-left">
+                  <img class="floating-image" src="imagens/TAXONOMY.gif" alt="Floating Image">
+                   </div>
+                  <p class="info slide-in-content">Data does not exist, as it is dependent on human labour, personal data, and social behaviours that accrue over long periods, through extended networks and controversial taxonomies.</p>
+              </article>
+              <article class="sample-card"> </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<div class="container-wrapper section section-1">
+    <section class="container">
+      <div class="space-holder">
+        <div class="sticky">
+          <div class="horizontal">
+            <section role="feed" class="cards">
+              <article class="sample-card">
+                <div class="chapter-1">
+                  <h2 class="typewriter">V. Representation bias</h2>
+                  <div class="parallax-container">
+                    <p class="quote zoom-in parallax-quote">"Representation bias occurs when the development sample under-represents some part of the population, and subsequently fails to generalize well for a subset of the used population."</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Gender Modal Bias <i class="fas fa-plus fa-spin"></i>
+                    <span class="hover-content">Model of "doing gender" is now widespread within the social sciences—have been particularly interested not just in how people model and gauge the gender of others, but how they believe it is modeled. As would be expected in a schema where gender derives from sex
+                    </span>
+                    </span>
+                  </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/gender-model.gif" alt="Floating Image">
+                  </div>
+
+                  <ul class="slide-in-items slide-in-right-alt" id="item-list">
+                    <li class="slide-in-right-alt" >
+                      <span class="main-info">Binary &#43;</span>
+                      <span class="additional-info">man or woman.</span>
+                    </li>
+                    <li class="slide-in-right-alt" >
+                      <span class="main-info">Immutable &#43;</span>
+                      <span class="additional-info">assigned a category.</span>
+                    </li>
+                    <li class="slide-in-right-alt" >
+                      <span class="main-info">Physiological &#43;</span>
+                      <span class="additional-info">physical characteristics.</span>
+                    </li>
+                  </ul>
+
+              </article>
+              <article class="sample-card">
+                  <h3 class="neon-effect fade-in-out">
+                      <span class="hover-box glare-effect icon-spin">Historical Bias <i class="fas fa-plus fa-spin"></i>
+                      <span class="hover-content">Historical bias (or world bias) is already apparent in society before technological intervention. Nonetheless, the naturalisation of such bias, that is the silent integration of inequality into an apparently neutral technology is by itself harmful</span>
+                      </span>
+                    </h3>
+                  <div class="image-left">
+                    <img class="floating-image" src="imagens/historical.gif" alt="Floating Image">
+                  </div>
+                  <p class="info slide-in-content">‘the employment of new technologies that reflect and reproduce existing inequalities but that are promoted and perceived as more objective or progressive than the discriminatory systems of a previous era</p>
+              </article>
+              <article class="sample-card">
+                <h3 class="neon-effect fade-in-out">
+                    <span class="hover-box glare-effect icon-spin">Cultural Bias <i class="fas fa-plus fa-spin"></i>
+                    <span class="hover-content">Cultural bias is based on their behaviour and social role</span>
+                    </span>
+                  </h3>
+                <div class="image-left">
+                    <img class="floating-image" src="imagens/cultural.gif" alt="Floating Image">
+                </div>  
+                <p class="info slide-in-content">(man or woman)</p>
+              </article>
+              <article class="sample-card">
+                <h3 class="neon-effect fade-in-out">
+                  <span class="hover-box glare-effect icon-spin">Biological Bias <i class="fas fa-plus fa-spin"></i>
+                    <span class="hover-content">Biological bias is based on anatomy, chromosomes and hormones, and gender</span>
+                    </span>
+                  </h3>
+                <div class="image-left">
+                  <img class="floating-image" src="imagens/biological.gif" alt="Floating Image">
+                </div>
+                <p class="info slide-in-content">(male or female)</p>
+              </article>
+              <article class="sample-card">
+                <h3 class="neon-effect fade-in-out">
+                  <span class="hover-box glare-effect icon-spin">Social Bias <i class="fas fa-plus fa-spin"></i>
+                      <span class="hover-content">Social bias as discrimination for, or against, a person or group, or a set of ideas or beliefs, in a way that is prejudicial or unfair</span>
+                      </span>
+                    </h3>
+                  <div class="image-left">
+                  <img class="floating-image" src="imagens/social.gif" alt="Floating Image">
+                   </div>
+                  <p class="info slide-in-content">Sociologists of gender—particularly ethnomethodologists, who study how individuals understand and reproduce the roles and constructs of society</p>
+              </article>
+              <article class="sample-card">
+                <h3 class="neon-effect fade-in-out">
+                  <span class="hover-box glare-effect icon-spin">Gender Bias <i class="fas fa-plus fa-spin"></i>
+                      <span class="hover-content">Social bias as discrimination for, or against, a person or group, or a set of ideas or beliefs, in a way that is prejudicial or unfair</span>
+                      </span>
+                    </h3>
+                <div class="image-left">
+                  <img class="floating-image" src="imagens/gender-bias.gif" alt="Floating Image">
+                </div>
+                  <p class="info slide-in-content">The assumption that sex dictates gender—in other words, that it mandates social roles, combinations of behaviors and traits and aspects ofpresentation and identity—fails to capture the existence</p>
+              </article>
+              <article class="sample-card"> </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+<div class="container-wrapper section section-1">
+    <section class="container">
+      <div class="space-holder">
+        <div class="sticky">
+          <div class="horizontal">
+            <section role="feed" class="cards">
+              <article class="sample-card">
+                  <div class="bumper">
+                    <p class="quote">'Gender bias is issue in today’s society for chaging bias in algorithms first we need to fix society.'</p>
+                  </div>
+              </article>
+
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+</body>
+</html>
