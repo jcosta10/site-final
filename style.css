@@ -179,7 +179,7 @@ nav a:hover {
 
 .sample-card {
   position: relative;
-  height: 700px;
+  height: 500px;
   padding: 100px;
   width: 900px;
   flex-shrink: 0;
