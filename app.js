@@ -1,3 +1,4 @@
+
 /*scroll*/
 
 const containerWrappers = document.querySelectorAll('.container-wrapper');
@@ -24,6 +25,33 @@ containerWrappers.forEach((containerWrapper) => {
   });
 });
 
+
+//frozen
+
+const sampleCards = document.querySelectorAll('.sample-card');
+
+sampleCards.forEach((sampleCard) => {
+  sampleCard.addEventListener('mouseenter', () => {
+    // Centraliza o elemento na tela
+    const windowWidth = window.innerWidth;
+    const targetLeft = (windowWidth - sampleCard.offsetWidth) / 2;
+
+    window.scrollTo({
+      left: targetLeft,
+      behavior: 'smooth'
+    });
+
+    // Desabilita a rolagem do scroll
+    document.body.style.overflow = 'hidden';
+
+    // Reabilita a rolagem após 5 segundos
+    setTimeout(() => {
+      document.body.style.overflow = '';
+    }, 5000); // 5 segundos em milissegundos
+  });
+});
+
+
 /*effects*/
 AOS.init();
 
@@ -49,44 +77,9 @@ function showItemsWithDelay() {
 
 showItemsWithDelay(); //effects
 
-//frozen
-const sampleCards = document.querySelectorAll('.sample-card');
 
-sampleCards.forEach((sampleCard) => {
-  sampleCard.addEventListener('mouseenter', () => {
-    // Centraliza o elemento na tela
-    const cardRect = sampleCard.getBoundingClientRect();
-    const parentRect = sampleCard.parentNode.getBoundingClientRect();
-    const targetLeft = parentRect.left + (parentRect.width - cardRect.width) / 2;
 
-    // Calcula a posição vertical do elemento em relação ao topo da página
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    // Calcula a posição vertical de deslocamento necessário para centralizar o elemento
-    const targetTop = cardRect.top + scrollTop - (window.innerHeight - cardRect.height) / 2;
-
-    // Faz um scroll suave para a posição centralizada
-    window.scrollTo({
-      left: targetLeft,
-      top: targetTop,
-      behavior: 'smooth'
-    });
-
-    // Adiciona a classe 'frozen' ao sample-card
-    sampleCard.classList.add('frozen');
-
-    // Desabilita a rolagem do scroll
-    document.body.style.overflow = 'hidden';
-
-    // Reabilita a rolagem após 5 segundos
-    setTimeout(() => {
-      // Remove a classe 'frozen' do sample-card
-      sampleCard.classList.remove('frozen');
-
-      document.body.style.overflow = '';
-    }, 5000); // 5 segundos em milissegundos
-  });
-});
 
 
 /*typewriter*/
@@ -232,6 +225,8 @@ window.addEventListener('scroll', function() {
     }
   });
 }); 
+
+
 
 // Pop-up
 

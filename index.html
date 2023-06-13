@@ -11,14 +11,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tilt.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" /> 
-
-  <script src="https://unpkg.com/overscroll@2.0.8/dist/overscroll.min.js"></script>
-
-
 	<script defer src="app.js"></script>
 </head>
 <body>
- <div class="site-container">
+<div class="site-container">
         <nav>
             <a href="index.html">(De)coding Gender Bias</a>
             <a href="#" onclick="mostrarPopUp()">About</a>
@@ -51,10 +47,8 @@
         </div>
     </div>
 
-    
-<div class="container-wrapper section section-1">
-    <section class="container">
-      <div class="rectangle">
+<div class="bumper-1">
+  <div class="rectangle">
         <div class="inner-rectangle">
             <div class="word-container">
                 <div class="word">man</div>
@@ -63,7 +57,8 @@
         </div>
         <div class="cover-image"></div>
     </div>
-    </section>
+</div>
+
 
 <div class="container-wrapper section section-1">
     <section class="container">
@@ -71,17 +66,11 @@
         <div class="sticky">
           <div class="horizontal">
             <section role="feed" class="cards">
-              <article class="sample-card"> </article>
               <article class="sample-card">
                 <div class="chapter-1">
                   <h2 class="typewriter">I. Misgendering = Misrepresentation </h2>
                   <div class="parallax-container">
-                    <p class="quote zoom-in parallax-quote">
-                      <span data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-offset="500" data-aos-duration="500">"Optical lenses symbolize biases and approximations representing the compression and</span>
-                      <span data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-offset="500" data-aos-duration="1000">distortion of the information flow. The total bias of machine learning is represented by the
-                      central lens of the statistical model through which the perception of the world is diffracted."</span>
-                      
-                    </p>
+                    <p class="quote zoom-in parallax-quote">"Optical lenses symbolize biases and approximations representing the compression and distortion of the information flow. The total bias of machine learning is represented by the central lens of the statistical model through which the perception of the world is diffracted."</p>
                   </div>
                 </div>
               </article>
@@ -93,7 +82,7 @@
                     </span>
                   </h3>
                   <div class="image-left">
-                    <img src="imagens/ACR.gif" alt="Floating Image">
+                    <img class="floating-image" src="imagens/ACR.gif" alt="Floating Image">
                   </div>
 
                   <ul class="slide-in-items slide-in-right" id="item-list">
@@ -112,7 +101,6 @@
                   </ul>
 
               </article>
-              <article class="sample-card"> </article>
             </section>
           </div>
         </div>
@@ -125,9 +113,9 @@
         <div class="sticky">
           <div class="horizontal">
             <section role="feed" class="cards">
-             <article class="sample-card"> </article>
+
               <article class="sample-card">
-                <div class="chapter-2">
+                <div class="chapter-1">
                   <h2 class="typewriter">II. Model </h2>
                   <div class="parallax-container">
                     <p class="quote zoom-in parallax-quote">"AI is not a thinking automaton but an algorithm that performs pattern recognition."</p>
@@ -141,7 +129,7 @@
                     </span>
                   </h3>
                   <div class="image-left">
-                    <img  src="imagens/pattern.gif" alt="Floating Image">
+                    <img class="floating-image" src="imagens/pattern.gif" alt="Floating Image">
                   </div>
 
                   <p class="info slide-in-content">A visual pattern is recorded as an impression on a network of artificial neurons that are firing up in concert with the repetition of similar images and activating one single output neuron.</p>
@@ -153,7 +141,7 @@
                     </span>
                   </h3>
                   <div class="image-left">
-                    <img src="imagens/neural-network.gif" alt="Floating Image">
+                    <img class="floating-image" src="imagens/neural-network.gif" alt="Floating Image">
                   </div>
 
                   <p class="info slide-in-content">Artificial neural networks started as simple computing structures that evolved into complex ones which are now controlled by a few hyperparameters that express millions of parameters.</p>
@@ -165,7 +153,7 @@
                     </span>
                   </h3>
                   <div class="image-left">
-                    <img src="imagens/black-box.gif" alt="Floating Image">
+                    <img class="floating-image" src="imagens/black-box.gif" alt="Floating Image">
                   </div>
 
                   <p class="info slide-in-content">The black box effect is an actual issue of deep neural networks (which filter information so much that their chain of reasoning cannot be reversed) but has become a generic pretext for the opinion that AI systems are not just inscrutable and opaque, but even ‘alien’ and out of control.</p>
@@ -179,9 +167,11 @@
                   <div class="image-left">
                     <img class="floating-image" src="imagens/Gost-work.gif" alt="Floating Image">
                   </div>
-                  <p class="info slide-in-content">The problem of bias has mostly originated from the fact that machine learning algorithms are among the most efficient for information compression, which engenders issues of information resolution, diffraction and loss.</p>
+                  <p class="info slide-in-content">The problem of
+                    <span class="middle-info">bias &#43;</span>
+                    <span class="other-info">Bias is the action of supporting or opposing a particular person or thing in an unfair way, because of allowing personal opinions to influence your judgment.</span> has mostly originated from the fact that machine learning algorithms are among the most efficient for information compression, which engenders issues of information resolution, diffraction and loss.</p>
               </article>
-              <article class="sample-card"> </article>
+
             </section>
           </div>
         </div>
@@ -194,7 +184,6 @@
         <div class="sticky">
           <div class="horizontal">
             <section role="feed" class="cards">
-              <article class="sample-card"> </article>
               <article class="sample-card">
                 <div class="chapter-1">
                   <h2 class="typewriter">III. Model learning </h2>
@@ -213,7 +202,7 @@
                     <img class="floating-image" src="imagens/bruce-froce.gif" alt="Floating Image">
                   </div>
 
-                  <p class="info slide-in-content">Neural networks are said to be among the most efficient algorithms because these differential methods can approximate the shape of any function given enough layers of neurons and abundant computing resources.</p>
+                  <p class="info slide-in-content">It is important to recall that the ‘intelligence’ of machine learning is not driven by exact formulas of mathematical analysis, but by algorithms of brute force approximation. (...)Neural networks are said to be among the most efficient algorithms because these differential methods can approximate the shape of any function given enough layers of neurons and abundant computing resources.</p>
               </article>
 
               <article class="sample-card">
@@ -289,7 +278,9 @@
                   </ul>
 
               </article>
-              <article class="sample-card"> </article>
+              <article class="sample-card">
+
+              </article>
             </section>
           </div>
         </div>
@@ -303,7 +294,6 @@
         <div class="sticky">
           <div class="horizontal">
             <section role="feed" class="cards">
-              <article class="sample-card"> </article>
               <article class="sample-card">
                 <div class="chapter-1">
                   <h2 class="typewriter">IV. Traning data</h2>
@@ -391,7 +381,6 @@
                    </div>
                   <p class="info slide-in-content">Data does not exist, as it is dependent on human labour, personal data, and social behaviours that accrue over long periods, through extended networks and controversial taxonomies.</p>
               </article>
-              <article class="sample-card"> </article>
             </section>
           </div>
         </div>
@@ -404,7 +393,6 @@
         <div class="sticky">
           <div class="horizontal">
             <section role="feed" class="cards">
-              <article class="sample-card"> </article>
               <article class="sample-card">
                 <div class="chapter-1">
                   <h2 class="typewriter">V. Representation bias</h2>
@@ -496,31 +484,16 @@
                 </div>
                   <p class="info slide-in-content">The assumption that sex dictates gender—in other words, that it mandates social roles, combinations of behaviors and traits and aspects ofpresentation and identity—fails to capture the existence</p>
               </article>
-              <article class="sample-card"> </article>
-            </section>
-          </div>
-        </div>
-      </div>
-    </section>
-<div class="container-wrapper section section-1">
-    <section class="container">
-      <div class="space-holder">
-        <div class="sticky">
-          <div class="horizontal">
-            <section role="feed" class="cards">
-              <article class="sample-card"> </article>
-              <article class="sample-card">
-                  <div class="bumper">
-                    <p class="quote">'Gender bias is issue in today’s society for chaging bias in algorithms first we need to fix society.'</p>
-                  </div>
-              </article>
-
             </section>
           </div>
         </div>
       </div>
     </section>
 
+    <div class="bumper">
+      <p class="quote-end">'Gender bias is issue in today’s society for chaging bias in algorithms first we need to fix society.'</p>
+    </div>
+  </div>
 
 </body>
 </html>
