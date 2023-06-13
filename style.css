@@ -189,11 +189,11 @@ nav a:hover {
   top: 10%;
   left: 0;
   transform: translateX(-50%);
-  margin-left: 0%;
+  margin-left: 100px;
 }
 .chapter-1{
   position: absolute;
-  left: 100px; /* Ajuste o valor conforme necessário */
+  left: 0px; /* Ajuste o valor conforme necessário */
 }
 
 .freeze {
